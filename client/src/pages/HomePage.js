@@ -15,6 +15,9 @@ export function HomePage()
 
     return (
         <div className='text-white'>
+
+            <Link to='/new' className=''>Create New Post</Link>
+
             {posts.map(post => (
                 <div key={post._id}>
                     {post.title}
